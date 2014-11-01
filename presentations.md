@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Presentations"
 description: ""
 permalink: /presentations.html
