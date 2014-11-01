@@ -2,7 +2,7 @@
 layout: post
 title: Drupal Design Patterns
 created: 1297271648
-permalink: blog/drupal-design-patterns
+permalink: blog/drupal-design-patterns/index
 categories: drupal
 tags: [design patterns, development]
 ---
