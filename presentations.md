@@ -40,7 +40,7 @@ Below is a brief list of presentations that I have given on Drupal and other tec
  - "[Drupal 7 and Entities](http://groups.drupal.org/node/112604)", LA Drupal Main Monthly Meetup [(Screencast)](http://ladrupal.blip.tv/file/4809948/) [(Slides)](http://www.slideshare.net/erikwebb/drupal-7-and-entities-7036807)
  - "[Drupal Design Patterns](http://groups.drupal.org/node/112639)", Downtown LA Drupal Meetup [(Screencast)](http://ladrupal.blip.tv/file/4775787/) [(Slides)](http://www.slideshare.net/erikwebb/drupal-design-patterns) [(Blog post)](http://erikwebb.net/blog/drupal-design-patterns/index)
  - "[Drupal Design Patterns](http://www.fldrupalcamp.org/program/sessions/drupal-design-patterns)", Florida Drupal Camp [(Slides)](http://www.slideshare.net/erikwebb/drupal-design-patterns) [(Blog post)](http://erikwebb.net/blog/drupal-design-patterns/index)
- - "[Updating Your Website to Drupal 7](https://www.acquia.com/resources/acquia-tv/conference/updating-your-website-drupal-7)", Acquia Webinar
+ - "Updating Your Website to Drupal 7", Acquia Webinar
 
 ### 2010 ###
 
