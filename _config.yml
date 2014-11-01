@@ -1,2 +1,11 @@
-name: Your New Jekyll Site
+name: erikwebb dot net
 pygments: true
+
+author :
+  name : Erik Webb
+  twitter : erikwebb
+  linkedin : erikwebb
+  github : erikwebb
+  drupal : 273404
+  slideshare : erikwebb
+  feedname : erikwebbdotnet

@@ -1,46 +1,73 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+	<head>
+		<title>{{ page.title }}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.scrollzer.min.js"></script>
+		<script src="/assets/js/jquery.scrolly.min.js"></script>
+		<script src="/assets/js/skel.min.js"></script>
+		<script src="/assets/js/skel-layers.min.js"></script>
+		<script src="/assets/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="/assets/css/skel.css" />
+			<link rel="stylesheet" href="/assets/css/style.css" />
+			<link rel="stylesheet" href="/assets/css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+			<!-- Header -->
+				<section id="header" class="skel-layers-fixed">
+					<header>
+						<span class="image avatar"><img src="/static/images/headshot_casual.jpg" alt="" /></span>
+						<h1 id="logo"><a href="/">{{ site.author.name }}</a></h1>
+						<p><em>Cloud Engineering Manager</em> at <strong><a href="https://www.acquia.com/">Acquia</a></strong>. Paragliding on the weekends. <strong><a href="http://www.gatech.edu/">Georgia Tech</a></strong> graduate, Atlanta native.</p>
+					</header>
+					<nav id="nav">
+						<ul>
+							<li><a href="/blog.html"{% if page.url == '/blog.html' %} class="active"{% endif %}>Blog</a></li>
+							<li><a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>About</a></li>
+							<li><a href="/presentations.html"{% if page.url == '/presentations.html' %} class="active"{% endif %}>Presentations</a></li>
+						</ul>
+					</nav>
+					<footer>
+						<ul class="icons">
+							<li><a href="https://twitter.com/{{ site.author.twitter }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://drupal.org/user/{{ site.author.drupal }}" class="icon fa-drupal"><span class="label">Drupal.org</span></a></li>
+							<li><a href="https://github.com/{{ site.author.github }}" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://slideshare.net/{{ site.author.slideshare }}" class="icon fa-slideshare"><span class="label">Slideshare</span></a></li>
+						</ul>
+					</footer>
+				</section>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+			<!-- Main -->
+				<div id="main">
 
-    </head>
-    <body>
+          {{ content }}
+				
+				</div>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-
-    </body>
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; erikwebb dot net. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+			
+		</div>
+	</body>
 </html>

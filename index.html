@@ -1,13 +1,56 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: erikwebb dot net
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+					<!-- One -->
+					<section id="one">
+						<div class="container">
+            	{% include intro.html %}
+            </div>
+          </section>
+						
+					<!-- Two -->
+          <section id="two">
+						<div class="container">
+              {% include recent.html %}
+            </div>
+          </section>
+
+					<!-- Three -->
+						<section id="three">
+							<div class="container">
+								<h3>A Few Accomplishments</h3>
+								<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+								<div class="features">
+									<article>
+										<a href="#" class="image"><img src="/assets/images/pic01.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Possibly broke spacetime</h4>
+											<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="/assets/images/pic02.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Terraformed a small moon</h4>
+											<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="/assets/images/pic03.jpg" alt="" /></a>
+										<div class="inner">
+											<h4>Snapped dark matter in the wild</h4>
+											<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+										</div>
+									</article>
+								</div>
+							</div>
+						</section>
+						
+					<!-- Four -->
+						<section id="four">
+							<div class="container">
+								{% include contact.html %}
+							</div>
+						</section>
