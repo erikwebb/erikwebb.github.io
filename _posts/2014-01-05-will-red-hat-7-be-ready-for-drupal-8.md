@@ -5,8 +5,6 @@ description: ""
 category: "drupal"
 tags: [sysadmin, rhel, apache, mysql]
 ---
-{% include JB/setup %}
-
 In mid-December, the upcoming release of the seventh version Red Hat Enterprise Linux ("RHEL") [arrived for public testing](https://www.redhat.com/about/news/archive/2013/12/red-hat-announces-availability-of-red-hat-enterprise-linux-7-beta). With the last major release of RHEL arriving in late 2010, a lot has changed in the world of hosting Drupal sites. The final release of RHEL 7 will likely come just after Drupal 8 is released, so by the time Drupal 8 sites begin to be launched, RHEL 7 will become a serious consideration in your hosting decision.
 
 A quick glance at Drupal's [installation requirements](https://drupal.org/requirements) shows that there is a new PHP version requirement for Drupal 8, but more important are the overall trends in the other software needed to host a high-performance, scalable Drupal web site. Acquia Cloud strives hard to keep up with these changes over time. If you're unable to use Acquia Cloud, RHEL often grows old quickly with four or more years between major releases.

@@ -5,8 +5,6 @@ description: ""
 category: "Drupal"
 tags: [performance]
 ---
-{% include JB/setup %}
-
 The built-in aggregation method in Drupal core (6 and 7 at least) works efficiently for average sites, but can run into issues for larger sites with complex page structures or specific use of many CSS and JS files.
 
 In certain circumstances, this can even cause downtime showing many piled up queries similar to

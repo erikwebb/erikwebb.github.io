@@ -5,8 +5,6 @@ description: ""
 category: "drupal"
 tags: [services]
 ---
-{% include JB/setup %}
-
 The [Services](http://drupal.org/project/services) module in Drupal provides a web service endpoint for Drupal content quite easily. The ability to upload files associated with content is a bit more difficult and actually requires a second web service request.
 
 To enable this, ensure your `hook_default_services_endpoint()` makes the `attach_file` resource available -
