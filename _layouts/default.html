@@ -21,7 +21,7 @@
   <meta property="article:tags" content="{{ page.tags }}" />
   <meta property="article:published_time" content="{{ page.date }}" />
   {% endif %}
-		<meta name="description" content="{{ page.excerpt }}" />
+		<meta name="description" content="{{ page.excerpt | escape }}" />
 		<meta name="keywords" content="{{ page.categories }},{{ page.tags }}" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="/assets/js/jquery.min.js"></script>
