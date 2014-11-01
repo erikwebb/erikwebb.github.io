@@ -9,7 +9,7 @@ In photography, there is the concept of the Exposure Triangle - an equilateral t
 
 Like in photography, software development must balance three factors as well - simplicity, flexibility, and scalability. Any given project can entirely focus on any two of the factors, but in return the third factor is neglected. Just as much as a heavily weighted project may fail due to omitting the third factor, a perfectly balanced project may fail because it was unable to differentiate itself. This triangle is a method of focusing efforts and priorities, regardless of ultimate execution.
 
-![Complexity triangle](/assets/images/complexity_triangle.png)
+![Complexity triangle](/static/images/complexity_triangle.png)
 
 This graphic came out of a long discussion with a current client attempting to visualize how Drupal and Wordpress (their current CMS of choice) differ in focus and execution. While Wordpress is an elegantly simple CMS, it has never excelled in its flexibility or scalability (from the perspective of scaling complexity). It has gained its popularity driven by its intuitive interface and install-to-setup time. On the other hand, Drupal has never strived to be a simple product, or even find a balance directly in the middle. Instead, flexibility and scalability have taken center stage and left the job of adding simplicity to distribution builders and site developers. Drupal is positioned as a platform, in contrast to a pure CMS like Wordpress.
 
