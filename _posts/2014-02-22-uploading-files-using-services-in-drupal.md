@@ -9,43 +9,49 @@ The [Services](http://drupal.org/project/services) module in Drupal provides a w
 
 To enable this, ensure your `hook_default_services_endpoint()` makes the `attach_file` resource available -
 
-    /**
-     * Implements hook_default_services_endpoint().
-     */
-    function myservices_default_services_endpoint() {
+{% highlight php %}
+<?php
+/**
+ * Implements hook_default_services_endpoint().
+ */
+function myservices_default_services_endpoint() {
 
+  // ...
+  $endpoint->resources = array(
+    // ...
+    'node' => array(
       // ...
-      $endpoint->resources = array(
-        // ...
-        'node' => array(
-          // ...
-          'targeted_actions' => array(
-            'attach_file' => array(
-              'enabled' => '1',
-            ),
-          ),
-        // ...
-      );
-      // ...
+      'targeted_actions' => array(
+        'attach_file' => array(
+          'enabled' => '1',
+        ),
+      ),
+    // ...
+  );
+  // ...
 
-      return $export;
-    }
+  return $export;
+}
+{% endhighlight %}
 
 I ran into this issue on a recent project and wasn't able to find any direction documentation to solve the problem. Here's my solution using the excellent [Guzzle PHP HTTP client](http://docs.guzzlephp.org/) -
 
-    $file = '/path/to/file';
+{% highlight php %}
+<?php
+$file = '/path/to/file';
 
-    // First send the report itself
-    $response = $this->client->post('node', array(), array(
-      'type' => 'report',
-    ));
-    $report = json_decode($response->getBody(TRUE));
+// First send the report itself
+$response = $this->client->post('node', array(), array(
+  'type' => 'report',
+));
+$report = json_decode($response->getBody(TRUE));
 
-    // Second attach the report file to the report
-    $attachment = $this->client->post('node/' . $report->nid . '/attach_file', array(), array(
-        'field_name' => 'field_file',
-        'files[]' => '@' . $file,
-    ));
+// Second attach the report file to the report
+$attachment = $this->client->post('node/' . $report->nid . '/attach_file', array(), array(
+    'field_name' => 'field_file',
+    'files[]' => '@' . $file,
+));
+{% endhighlight %}
 
 Although 2 requests are required, the actual code is quite simple.
 

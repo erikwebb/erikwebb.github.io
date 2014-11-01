@@ -25,7 +25,7 @@ wget http://www.gtlib.gatech.edu/pub/apache/httpd/httpd-2.4.4.tar.bz2
 Now we can identify the missing dependencies and figure out how to continue -
 
 {% highlight bash %}
-[root@vagrant-centos6-test SOURCES]# rpmbuild -tb httpd-2.4.4.tar.bz2 
+# rpmbuild -tb httpd-2.4.4.tar.bz2 
 error: Failed build dependencies:
     autoconf is needed by httpd-2.4.4-1.x86_64
     apr-devel >= 1.4.0 is needed by httpd-2.4.4-1.x86_64
