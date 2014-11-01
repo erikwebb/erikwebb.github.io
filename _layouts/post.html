@@ -13,6 +13,10 @@ layout: default
                   {{ content }}
                 </div>
                 
+                <div id="comment">
+                  {% include comments.html %}
+                </div>
+
                 <h4>Related Blog Posts</h3>
                 <ul class="posts">
                   {% for post in site.related_posts limit:3 %}
