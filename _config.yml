@@ -11,3 +11,5 @@ author :
   slideshare : erikwebb
   feedname : erikwebbdotnet
   flickr : erikwebb
+
+exclude: [node_modules, Gemfile, Gruntfile.js, package.json, README.md]
