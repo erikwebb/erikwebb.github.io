@@ -8,7 +8,7 @@ tags: sysadmin
 ---
 Similar to compiling [XHProf for Snow Leopard](http://erikwebb.net/blog/profiling-drupal-snow-leopard-acquia-drupal-and-xhprof), installing any new PHP extension is usually easy. The MS-SQL extension, specifically, requires an additional library called [FreeTDS](http://www.freetds.org/). The linking tools included do not work well with Snow Leopard and need to be replaced. Here are the steps I took to compile FreeTDS and the MS-SQL extension -
 
-- Download [PHP](http://www.php.net/downloads.php) and [FreeTDS](ftp://ftp.freetds.org/pub/freetds/stable/freetds-stable.tgz) sources. **NOTE: The PHP version needs to match your DAMP (or other server) installation.**
+- Download [PHP](http://www.php.net/downloads.php) and [FreeTDS](http://www.freetds.org/software.html) sources. **NOTE: The PHP version needs to match your DAMP (or other server) installation.**
 
 - Navigate to the mssql/ folder inside the PHP source -
 
