@@ -7,7 +7,7 @@ layout: default
                 <header class="major">
                   <h2>{{ page.title }}</h2>
                 </header>
-                <p class="meta">{{ page.date | date_to_string }}</p>
+                <p class="meta">Posted on <em>{{ page.date | date_to_string | date: "%B %-d, %Y" }}</em></p>
 
                 <div class="post">
                   {{ content }}
