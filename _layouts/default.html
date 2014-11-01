@@ -12,10 +12,10 @@
   <meta property="og:site_name" content="{{ site.name }}">
   {% if page.url == '/index.html' %}
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="http://www.erikwebb.net{{ site.author.headshot }}" />
+  <meta property="og:image" content="{{ site.domain }}{{ site.author.headshot }}" />
   {% else %}
   <meta property="og:type" content="article" />
-  <meta property="og:image" content="http://www.erikwebb.net{{ page.image }}" />
+  <meta property="og:image" content="{{ site.domain }}{{ page.image }}" />
   <meta property="article:author" content="Erik Webb" />
   <meta property="article:section" content="{{ page.categories }}" />
   <meta property="article:tags" content="{{ page.tags }}" />
