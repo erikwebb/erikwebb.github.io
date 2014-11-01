@@ -3,6 +3,7 @@ pygments: true
 
 author :
   name : Erik Webb
+  headshot : /static/images/headshot_casual.jpg
   twitter : erikwebb
   linkedin : erikwebb
   github : erikwebb
