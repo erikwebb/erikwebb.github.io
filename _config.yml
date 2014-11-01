@@ -1,7 +1,7 @@
 name: erikwebb dot net
 highlighter: pygments
 
-domain : http://www.erikwebb.net
+url: http://www.erikwebb.net
 
 author :
   name : Erik Webb
