@@ -945,7 +945,22 @@ $size-header: 23em;
 					&:first-child {
 						border-top: 0;
 					}
+
 				}
+        
+        ul {
+          
+          li {
+            
+            a {
+              font-size: 75%;
+  						padding: 0.5em 0;
+            }
+
+          }
+
+        }
+
 			}
 		}
 	}
