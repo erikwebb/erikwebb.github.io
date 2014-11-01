@@ -7,7 +7,7 @@ categories: Drupal
 ---
 **UPDATE: The [latest version of the devel module](http://drupal.org/node/990464) includes xhprof support. No separate module is needed anymore.**
 
-[xhprof](http://mirror.facebook.net/facebook/xhprof/doc.html) is a great utility for profiling and now apparently the only method of profiling memory usage as Xdebug has recently removed this requisite feature (as of 2.0.0RC4). Here are the steps I used to allow xhprof to run seamlessly on my 64-bit Snow Leopard machine.
+[xhprof](http://php.net/xhprof) is a great utility for profiling and now apparently the only method of profiling memory usage as Xdebug has recently removed this requisite feature (as of 2.0.0RC4). Here are the steps I used to allow xhprof to run seamlessly on my 64-bit Snow Leopard machine.
 
 -  Add the Acquia Drupal executables to your PATH variable, then open a new terminal. Here is the PATH variable in my .bash_profile file -
 
