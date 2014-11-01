@@ -1,5 +1,5 @@
 name: erikwebb dot net
-pygments: true
+highlighter: pygments
 
 author :
   name : Erik Webb
