@@ -8,7 +8,7 @@ Below is a brief list of presentations that I have given on Drupal and other tec
 
 ### 2014 ###
 
-- "[Planning for Performance](https://austin2014.drupal.org/session/planning-performance)", Drupalcon Portland
+- "[Planning for Performance](https://austin2014.drupal.org/session/planning-performance)", Drupalcon Austin
 - "[Planning for Performance: Examples with Drupal](http://www.gwoapp.com/events/planning-for-performance-examples-with-drupal)", [Great Wide Open 2014](http://greatwideopen.org/)
 
 ### 2013 ###
