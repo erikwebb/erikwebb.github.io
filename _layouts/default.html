@@ -47,7 +47,7 @@
 					<header>
 						<a href="/"><span class="image avatar"><img src="{{ site.author.headshot }}" alt="{{ site.name }}" /></span></a>
 						<h1 id="logo"><a href="/">{{ site.author.name }}</a></h1>
-						<p><em>Cloud Engineering Manager</em> at <strong><a href="https://www.acquia.com/">Acquia</a></strong>. <a href="http://www.ushpa.aero/">Paragliding</a> on the weekends. <strong><a href="http://www.gatech.edu/">Georgia Tech</a></strong> graduate, Atlanta native.</p>
+						{% include bio.html %}
 					</header>
 					<nav id="nav">
 						<ul>
@@ -80,7 +80,7 @@
 				<div id="main">
 
           {{ content }}
-				
+
 				</div>
 
 			<!-- Footer -->
@@ -91,7 +91,7 @@
 						</ul>
 					</div>
 				</section>
-			
+
 		</div>
 	</body>
 </html>
