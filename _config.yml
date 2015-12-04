@@ -14,8 +14,8 @@ author :
   feedname : erikwebbdotnet
   flickr : erikwebb
 
-comments :
-  disqus :
-    shortname : erikwebb
+# comments :
+#   disqus :
+#     shortname : erikwebb
 
 exclude: [node_modules, Gemfile, Gruntfile.js, package.json, README.md]
