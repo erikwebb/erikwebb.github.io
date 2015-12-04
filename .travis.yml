@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1
-script: bundle && jekyll build && htmlproof ./_site --href_ignore ftp
+script: bundle && jekyll build
 
 env:
   global:
