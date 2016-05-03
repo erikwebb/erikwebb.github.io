@@ -1,0 +1,22 @@
+span.avatar img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  border-radius: 75px;
+}
+
+footer ul.icons {
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+footer ul.icons li {
+  display: inline;
+  padding: 5px;
+}
+
+footer ul.icons li i {
+  content: none;
+}
