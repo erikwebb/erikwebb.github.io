@@ -17,4 +17,4 @@ author :
 #   disqus :
 #     shortname : erikwebb
 
-exclude: [node_modules, Gemfile, Gruntfile.js, package.json, README.md]
+exclude: [README.md]

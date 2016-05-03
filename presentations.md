@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Presentations"
+title: "Slides &amp; Presentations"
 description: ""
 permalink: /presentations.html
 ---
@@ -46,4 +46,3 @@ Below is a brief list of presentations that I have given on Drupal and other tec
 
  - "[Optimizing Your Drupal Development Environment](http://atlantadrupal.com/event/program/september-14-2010)", Atlanta Drupal Users Group [(Slides)](http://www.slideshare.net/erikwebb/getting-started-with-drupal-performance) [(Blog post)](http://erikwebb.net/blog/getting-started-drupal-performance)
  - "Drupal A-Z: From Actions to Zebra, An Absolute Beginner's Guide to Drupal", DrupalCamp Atlanta [(Video)](http://vimeo.com/16918846) [(Slides)](http://www.slideshare.net/erikwebb/drupal-az-drupalcamp-atlanta-2010)
-

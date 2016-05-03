@@ -1,80 +1,52 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!doctype html>
 <html>
-	<head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 		<title>{{ page.title }}</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" href="/static/stylesheets/styles.css">
+    <link rel="stylesheet" href="/static/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="/static/stylesheets/custom.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 		<meta property="og:title" content="{{ page.title }}" />
 		<meta property="og:site_name" content="{{ site.name }}">
-	  {% if page.url == '/index.html' %}
+		{% if page.url == '/index.html' %}
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="{{ site.url }}{{ site.author.headshot }}" />
-	  {% else %}
+		{% else %}
 		<meta property="og:type" content="article" />
 		<meta property="og:image" content="{{ site.url }}{{ page.image }}" />
 		<meta property="article:author" content="Erik Webb" />
 		<meta property="article:section" content="{{ page.categories }}" />
 		<meta property="article:tags" content="{{ page.tags }}" />
 		<meta property="article:published_time" content="{{ page.date }}" />
-	  {% endif %}
+		{% endif %}
 		<meta name="description" content="{{ page.excerpt | escape }}" />
 		<meta name="keywords" content="{{ page.categories }},{{ page.tags }}" />
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}/feed.xml">
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="/assets/js/jquery.min.js"></script>
-		<script src="/assets/js/jquery.scrollzer.min.js"></script>
-		<script src="/assets/js/jquery.scrolly.min.js"></script>
-		<script src="/assets/js/skel.min.js"></script>
-		<script src="/assets/js/skel-layers.min.js"></script>
-		<script src="/assets/js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="/assets/css/skel.css" />
-			<link rel="stylesheet" href="/assets/css/style.css" />
-			<link rel="stylesheet" href="/assets/css/style-xlarge.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie/v8.css" /><![endif]-->
-		<link rel="stylesheet" href="/assets/css/syntax.css" />
-	</head>
+		<!-- Font Awesome - https://fortawesome.github.io/Font-Awesome/ -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  </head>
 	<body>
-		<div id="wrapper">
+		<div class="wrapper">
 
 			<!-- Header -->
-				<section id="header" class="skel-layers-fixed">
-					<header>
-						<a href="/"><span class="image avatar"><img src="{{ site.author.headshot }}" alt="{{ site.name }}" /></span></a>
-						<h1 id="logo"><a href="/">{{ site.author.name }}</a></h1>
-						{% include bio.html %}
-					</header>
-					<nav id="nav">
+				<header>
+					<a href="/"><span class="image avatar"><img src="{{ site.author.headshot }}" alt="{{ site.name }}" width="150" height="150" /></span></a>
+					<h1 id="logo"><a href="/">{{ site.author.name }}</a></h1>
+					{% include bio.html %}
+					<nav>
 						<ul>
-							<li><a href="/">Home</a></li>
-              {% if page.url == '/index.html' %}
-                <ul>
-                  <li><a href="#one" class="active">Recent Blog Posts</a></li>
-                  <li><a href="#two">Where I Go</a></li>
-                </ul>
-              {% endif %}
-							<li><a href="/blog.html"{% if page.url == '/blog.html' %} class="active"{% endif %}>Blog</a></li>
-							<li><a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>About</a></li>
-							<li><a href="/presentations.html"{% if page.url == '/presentations.html' %} class="active"{% endif %}>Presentations</a></li>
+							<li><a href="/blog.html"{% if page.url == '/blog.html' %} class="active"{% endif %}><strong>Blog</strong> Posts</a></li>
+							<li><a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}><strong>About</strong> Myself</a></li>
+							<li><a href="/presentations.html"{% if page.url == '/presentations.html' %} class="active"{% endif %}><strong>Slides</strong> &amp; Presentations</a></li>
 						</ul>
 					</nav>
-					<footer>
-						<ul class="icons">
-							<li><a href="{{ site.url }}/feed.xml" class="icon fa-rss"><span class="label">RSS</span></a></li>
-							<li><a href="https://twitter.com/{{ site.author.twitter }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://drupal.org/user/{{ site.author.drupal }}" class="icon fa-drupal"><span class="label">Drupal.org</span></a></li>
-							<li><a href="https://github.com/{{ site.author.github }}" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="http://www.flickr.com/photos/{{ site.author.flickr }}" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
-							<li><a href="https://slideshare.net/{{ site.author.slideshare }}" class="icon fa-slideshare"><span class="label">Slideshare</span></a></li>
-						</ul>
-					</footer>
-				</section>
+			</header>
 
 			<!-- Main -->
 				<div id="main">
@@ -84,14 +56,19 @@
 				</div>
 
 			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<ul class="copyright">
-							<li>&copy; erikwebb dot net. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
+				<footer>
+					<ul class="icons">
+						<li><a href="{{ site.url }}/feed.xml"><i class="fa fa-rss fa-2x"></i></a></li>
+						<li><a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter fa-2x"></i></a></li>
+						<li><a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github fa-2x"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-linkedin fa-2x"></i></a></li>
+						<li><a href="https://slideshare.net/{{ site.author.slideshare }}"><i class="fa fa-slideshare fa-2x"></i></a></li>
+						<li><a href="https://drupal.org/user/{{ site.author.drupal }}"><i class="fa fa-drupal fa-2x"></i></a></li>
+					</ul>
+					<small>Hosted on GitHub Pages<br/>&copy; Erik Webb. All rights reserved.</small>
+				</footer>
 
 		</div>
+		<script src="/static/javascripts/scale.fix.js"></script>
 	</body>
 </html>
