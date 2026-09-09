@@ -10,9 +10,10 @@ Personal portfolio, tools showcase, and resumé link for **Erik Webb** — Softw
 
 ## Local Development
 
-To preview locally using Python:
+Simply open `index.html` in your browser:
 
 ```bash
-python3 -m http.server 8000
-# Open http://localhost:8000/
+open index.html
 ```
+
+*(Or double-click `index.html` in Finder).*
