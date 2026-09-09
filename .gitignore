@@ -1,5 +1,20 @@
-_site
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
 
-# Grunt/Compass
-node_modules
-.sass-cache
+# Editor & IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local temporary & build artifacts
+*.tmp
+*.bak
+*.log
+.env
