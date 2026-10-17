@@ -5,11 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erik Webb — Web Tools & Utilities</title>
   <meta name="description" content="Client-side privacy web tools and utilities by Erik Webb. Resumé on LinkedIn.">
+  <meta name="theme-color" content="#020617">
   <link rel="canonical" href="https://erikwebb.github.io/">
+
+  <!-- Open Graph / Social Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://erikwebb.github.io/">
+  <meta property="og:title" content="Erik Webb — Web Tools & Utilities">
+  <meta property="og:description" content="Lightweight, single-purpose web utilities engineered with privacy by design. 100% client-side in-browser execution.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Erik Webb — Web Tools & Utilities">
+  <meta name="twitter:description" content="Lightweight, single-purpose web utilities engineered with privacy by design. 100% client-side in-browser execution.">
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='8' fill='%232563eb'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='central' text-anchor='middle' fill='white' font-family='system-ui,-apple-system,sans-serif' font-weight='700' font-size='15'%3EEW%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
@@ -18,7 +36,7 @@
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-blue-500 selection:text-white antialiased">
 
   <!-- Main Navigation -->
-  <header class="border-b border-slate-850 bg-slate-950/80 backdrop-blur-md sticky top-0 z-30">
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-30">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
       
       <!-- Brand -->
@@ -36,18 +54,18 @@
       <div class="flex items-center space-x-3 sm:space-x-4">
         <!-- LinkedIn Resumé Link -->
         <a href="https://www.linkedin.com/in/erikwebb" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-xs sm:text-sm font-semibold text-slate-200 hover:text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 px-3.5 py-2 rounded-xl transition shadow-sm">
-          <svg class="w-4 h-4 fill-[#0A66C2]" viewBox="0 0 24 24">
+          <svg aria-hidden="true" class="w-4 h-4 fill-[#0A66C2]" viewBox="0 0 24 24">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
           </svg>
           <span>LinkedIn / Resumé</span>
-          <svg class="w-3 h-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg aria-hidden="true" class="w-3 h-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
           </svg>
         </a>
 
         <!-- GitHub Profile Link -->
-        <a href="https://github.com/erikwebb" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white p-2 rounded-xl hover:bg-slate-900 border border-transparent hover:border-slate-800 transition" title="GitHub">
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+        <a href="https://github.com/erikwebb" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="text-slate-400 hover:text-white p-2 rounded-xl hover:bg-slate-900 border border-transparent hover:border-slate-800 transition" title="GitHub">
+          <svg aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
           </svg>
         </a>
@@ -78,7 +96,7 @@
         Looking for my resumé? 
         <a href="https://www.linkedin.com/in/erikwebb" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 font-semibold underline decoration-blue-500/40 hover:decoration-blue-400 inline-flex items-center space-x-1">
           <span>View career history on LinkedIn</span>
-          <span>↗</span>
+          <span aria-hidden="true">↗</span>
         </a>
       </div>
     </div>
@@ -96,7 +114,7 @@
           <div class="flex flex-wrap items-center justify-between gap-3">
             <div class="flex items-center space-x-3">
               <div class="w-11 h-11 rounded-2xl bg-blue-600/20 border border-blue-500/30 text-blue-400 flex items-center justify-center font-bold shadow-sm">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
@@ -110,7 +128,7 @@
                   </span>
                 </div>
                 <h2 class="text-2xl sm:text-3xl font-bold text-white mt-0.5 group-hover:text-blue-300 transition">
-                  GDPR Passport Masker
+                  <a href="/gdpr-passport-masker/" class="focus:outline-none focus:underline">GDPR Passport Masker</a>
                 </h2>
               </div>
             </div>
@@ -128,19 +146,19 @@
           <!-- Feature Highlights Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300">
             <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800/80 flex items-start space-x-2.5">
-              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span aria-hidden="true" class="text-emerald-400 font-bold mt-0.5">✓</span>
               <span><strong>Zero Server Uploads:</strong> Decodes, masks, and renders entirely inside client HTML5 Canvas memory.</span>
             </div>
             <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800/80 flex items-start space-x-2.5">
-              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span aria-hidden="true" class="text-emerald-400 font-bold mt-0.5">✓</span>
               <span><strong>AI & OCR Friendly:</strong> Soft translucent red watermark preserves top headers for check-in verification.</span>
             </div>
             <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800/80 flex items-start space-x-2.5">
-              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span aria-hidden="true" class="text-emerald-400 font-bold mt-0.5">✓</span>
               <span><strong>HEIC & 300 DPI PDF:</strong> Supports iPhone camera photos and high-resolution PDF scans.</span>
             </div>
             <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800/80 flex items-start space-x-2.5">
-              <span class="text-emerald-400 font-bold mt-0.5">✓</span>
+              <span aria-hidden="true" class="text-emerald-400 font-bold mt-0.5">✓</span>
               <span><strong>Layout Auto-Detection:</strong> Intelligently adapts between 2-page spreads and single photo page crops.</span>
             </div>
           </div>
@@ -150,14 +168,14 @@
             <div class="flex items-center space-x-3">
               <a href="/gdpr-passport-masker/" class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-6 py-3 rounded-xl shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition transform hover:-translate-y-0.5">
                 <span>Launch Passport Masker</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
 
-              <a href="https://github.com/erikwebb/gdpr-passport-masker" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-slate-400 hover:text-white text-xs font-semibold px-4 py-3 rounded-xl bg-slate-950/60 hover:bg-slate-850 border border-slate-800 transition">
+              <a href="https://github.com/erikwebb/gdpr-passport-masker" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 text-slate-400 hover:text-white text-xs font-semibold px-4 py-3 rounded-xl bg-slate-950/60 hover:bg-slate-800 border border-slate-800 transition">
                 <span>GitHub Source</span>
-                <span>↗</span>
+                <span aria-hidden="true">↗</span>
               </a>
             </div>
 
@@ -168,7 +186,7 @@
       </div>
 
       <!-- Upcoming Tools Card -->
-      <div class="bg-slate-900/40 border border-slate-850 rounded-3xl p-6 sm:p-8 space-y-4">
+      <div class="bg-slate-900/40 border border-slate-800/80 rounded-3xl p-6 sm:p-8 space-y-4">
         <div class="flex items-center justify-between">
           <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Pipeline</span>
           <span class="text-xs text-slate-600 font-mono">Coming Soon</span>
@@ -185,7 +203,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-850 py-8 text-xs text-slate-500">
+  <footer class="border-t border-slate-800 py-8 text-xs text-slate-500">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center space-x-2">
         <span class="font-semibold text-slate-400">Erik Webb</span>
@@ -195,10 +213,10 @@
 
       <div class="flex items-center space-x-4">
         <a href="https://www.linkedin.com/in/erikwebb" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 font-medium transition">
-          LinkedIn / Resumé ↗
+          LinkedIn / Resumé <span aria-hidden="true">↗</span>
         </a>
         <a href="https://github.com/erikwebb" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white font-medium transition">
-          GitHub ↗
+          GitHub <span aria-hidden="true">↗</span>
         </a>
       </div>
     </div>
