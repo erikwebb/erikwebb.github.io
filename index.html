@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erik Webb — Web Tools & LinkedIn</title>
-  <meta name="description" content="Personal website of Erik Webb featuring web utilities, tools, and professional profile on LinkedIn.">
+  <meta name="description" content="Personal website of Erik Webb — Software architect and engineering leader based in Richmond, VA. Proud Georgia Tech grad building useful web utilities.">
   <meta name="theme-color" content="#0a0a0a">
   <link rel="canonical" href="https://erikwebb.github.io/">
 
@@ -12,10 +12,12 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://erikwebb.github.io/">
   <meta property="og:title" content="Erik Webb — Web Tools & LinkedIn">
-  <meta property="og:description" content="Lightweight, single-purpose web utilities and projects by Erik Webb.">
+  <meta property="og:description" content="Software architect and engineering leader based in Richmond, VA. Proud Georgia Tech grad building useful, privacy-first web utilities.">
+  <meta property="og:image" content="https://erikwebb.github.io/headshot.webp">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Erik Webb — Web Tools & LinkedIn">
-  <meta name="twitter:description" content="Lightweight, single-purpose web utilities and projects by Erik Webb.">
+  <meta name="twitter:description" content="Software architect and engineering leader based in Richmond, VA. Proud Georgia Tech grad building useful, privacy-first web utilities.">
+  <meta name="twitter:image" content="https://erikwebb.github.io/headshot.webp">
 
   <!-- Inline SVG Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='8' fill='%2310b981'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='central' text-anchor='middle' fill='%23000000' font-family='monospace' font-weight='700' font-size='14'%3E%3E_%3C/text%3E%3C/svg%3E">
@@ -87,13 +89,41 @@
     <!-- Hero Header & 2-Pane Navigation -->
     <div class="space-y-6 sm:space-y-8">
       
-      <div class="space-y-3">
-        <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-          Erik Webb
-        </h1>
-        <p class="text-neutral-400 text-sm sm:text-base max-w-2xl leading-relaxed">
-          Building useful web utilities and engineering software systems. Choose a destination below:
-        </p>
+      <div class="flex flex-col sm:flex-row items-start gap-6 sm:gap-8">
+        <!-- Headshot Avatar -->
+        <div class="relative shrink-0">
+          <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden border-2 border-neutral-800 bg-neutral-900 shadow-xl group">
+            <img src="headshot.webp" alt="Erik Webb headshot" class="w-full h-full object-cover" width="112" height="112" loading="eager">
+          </div>
+          <div class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-black" title="Active"></div>
+        </div>
+
+        <div class="space-y-4 flex-1">
+          <div class="space-y-2">
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              Erik Webb
+            </h1>
+            <div class="flex flex-wrap items-center gap-2 pt-1">
+              <span class="inline-flex items-center space-x-1.5 text-xs font-mono px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-neutral-300">
+                <svg aria-hidden="true" class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Richmond, VA</span>
+              </span>
+              <span class="inline-flex items-center space-x-1.5 text-xs font-mono px-2.5 py-1 rounded-md bg-neutral-900 border border-neutral-800 text-neutral-300">
+                <svg aria-hidden="true" class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+                <span>Proud Georgia Tech Grad</span>
+              </span>
+            </div>
+          </div>
+          <p class="text-neutral-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+            Software architect and engineering leader based in Richmond, VA, specializing in high-performance web systems and resilient cloud architecture. Proud Georgia Tech graduate with extensive experience guiding engineering teams, scaling web operations, and developing developer tooling.
+          </p>
+        </div>
       </div>
 
       <!-- 2-Pane Section -->
